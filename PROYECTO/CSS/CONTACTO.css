@@ -1,0 +1,97 @@
+/* Estilos para la sección de ponentes */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Oswald', sans-serif; /* Fuente principal */
+    background: linear-gradient(#FDAB02, #DF452A, #01C8DA, #8A8A93, #232224);
+    background-repeat: no-repeat;
+}
+
+.container {
+    background: #BEC5D1; /* Fondo oscuro */
+    color: #333; /* Color de texto */
+    padding: 50px 20px; /* Espaciado interno */
+    border: 5px solid #232224; /* Ancho y color del borde */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 1100px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3 {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    color: #DF452A; /* Color amarillo */
+    font-family: 'Oswald', sans-serif; /* Fuente para encabezados */
+  }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar las columnas */
+    gap: 30px; /* Espacio entre columnas */
+}
+
+@media (max-width: 991.98px) {
+    .col-lg-6 {
+        flex: 0 0 100%; /* Una columna por fila en pantallas medianas */
+        max-width: 100%; /* Una columna por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-lg-6 {
+        flex: 0 0 100%; /* Una columna por fila en dispositivos móviles */
+        max-width: 100%; /* Una columna por fila en dispositivos móviles */
+    }
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 50px 0; /* Espaciado interno */
+    text-align: center; /* Centrado del texto */
+}
+
+.footer a {
+    color: #D6CFC8; /* Color de los enlaces */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.footer a:hover {
+    color: #FFFFFF; /* Cambio a blanco al pasar el cursor */
+}
+
+.footer p {
+    font-size: 1rem; /* Tamaño de fuente para párrafos */
+    line-height: 1.8; /* Espaciado entre líneas */
+}
+
+.footer h4 {
+    color: #FDAB02; /* Color amarillo para los títulos */
+    font-size: 1.5rem; /* Tamaño de fuente para títulos */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.footer ul {
+    list-style: none; /* Eliminar viñetas de la lista */
+    padding: 0; /* Eliminar padding */
+}
+
+.footer ul li {
+    display: inline-block; /* Mostrar en línea los elementos de la lista */
+    margin-right: 10px; /* Espacio entre elementos */
+}
+
+.footer ul li a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1rem; /* Tamaño de fuente para enlaces */
+}
+
+.footer ul li a:hover {
+    color: #FDAB02; /* Cambio de color al pasar el mouse */
+}

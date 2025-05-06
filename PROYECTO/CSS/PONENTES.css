@@ -1,0 +1,151 @@
+/* Estilos para la sección de ponentes */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Oswald', sans-serif; /* Fuente principal */
+    background: linear-gradient(#FDAB02, #DF452A, #01C8DA, #8A8A93, #232224);
+    background-repeat: no-repeat;
+}
+
+.container {
+    background: #BEC5D1; /* Fondo oscuro */
+    color: #333; /* Color de texto */
+    padding: 50px 20px; /* Espaciado interno */
+    border: 5px solid #232224; /* Ancho y color del borde */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 1100px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3 {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    color: #DF452A; /* Color amarillo */
+    font-family: 'Oswald', sans-serif; /* Fuente para encabezados */
+  }
+
+
+.container-footer {
+    background: #232224; /* Fondo oscuro */
+    color: #D6CFC8; /* Color de texto */
+    padding: 40px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 50px #0ef; /* Sombra azul */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    width: 100%; /* Ancho completo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    text-align: center; /* Alinear contenido al centro */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar las columnas */
+    gap: 30px; /* Espacio entre columnas */
+}
+
+.col-sm-4 {
+    flex: 0 0 calc(33.33% - 20px); /* 3 columnas por fila con espacio entre ellas */
+    max-width: calc(33.33% - 20px); /* 3 columnas por fila con espacio entre ellas */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.col-sm-4 img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.col-sm-4 img:hover {
+    transform: scale(1.05);
+}
+
+.col-sm-4 .speaker-info {
+    background-color: #232224; /* Color de fondo del contenedor de información */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.col-sm-4 .speaker-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.col-sm-4 .speaker-info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 991.98px) {
+    .col-sm-4 {
+        flex: 0 0 calc(50% - 20px); /* 2 columnas por fila con espacio entre ellas */
+        max-width: calc(50% - 20px); /* 2 columnas por fila con espacio entre ellas */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-sm-4 {
+        flex: 0 0 100%; /* Una columna por fila en dispositivos móviles */
+        max-width: 100%; /* Una columna por fila en dispositivos móviles */
+    }
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 50px 0; /* Espaciado interno */
+    text-align: center; /* Centrado del texto */
+}
+
+.footer a {
+    color: #D6CFC8; /* Color de los enlaces */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.footer a:hover {
+    color: #FFFFFF; /* Cambio a blanco al pasar el cursor */
+}
+
+.footer p {
+    font-size: 1rem; /* Tamaño de fuente para párrafos */
+    line-height: 1.8; /* Espaciado entre líneas */
+}
+
+.footer h4 {
+    color: #FDAB02; /* Color amarillo para los títulos */
+    font-size: 1.5rem; /* Tamaño de fuente para títulos */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.footer ul {
+    list-style: none; /* Eliminar viñetas de la lista */
+    padding: 0; /* Eliminar padding */
+}
+
+.footer ul li {
+    display: inline-block; /* Mostrar en línea los elementos de la lista */
+    margin-right: 10px; /* Espacio entre elementos */
+}
+
+.footer ul li a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1rem; /* Tamaño de fuente para enlaces */
+}
+
+.footer ul li a:hover {
+    color: #FDAB02; /* Cambio de color al pasar el mouse */
+}
+

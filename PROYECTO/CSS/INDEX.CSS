@@ -1,0 +1,445 @@
+
+body {
+    width: 100%;
+    height:100%;
+    background: linear-gradient(#FDAB02 , #DF452A, #01C8DA, #8A8A93, #232224);
+    background-repeat: no-repeat;
+}
+
+/* Cambio de fondo del navbar */
+.bg-body-tertiary {
+    background-color: #232224 !important; /* Importante para sobrescribir la clase de Bootstrap */
+    box-shadow: 0 0 50px #01C8DA;
+    color: #fff;
+}
+
+/* Cambio de color de letras del navbar */
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #D6CFC8;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Cambio de color del del navbar-brand */
+.navbar-brand {
+    color: #D6CFC8; /* Color del texto normal */
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Efecto al pasar el cursor por el navbar-brand */
+.navbar-brand:hover {
+    color: #D6CFC8; /* Mantener el color del texto al pasar el cursor */
+}
+
+/* Estilo base para los elementos del navbar */
+.navbar-nav .nav-link {
+    color: #D6CFC8; /* Color del texto normal */
+    transition: color 0.3s ease; /* Transición suave para el color */
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Estilo para los elementos cuando se pasa el cursor sobre ellos */
+.navbar-nav .nav-link:hover {
+    color: #FFFFFF; /* Nuevo color de texto al pasar el cursor */
+    transform: scale(1.1); /* Escalado del elemento al 110% */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 991.98px) {
+    /* Eliminar todas las transiciones y efectos para dispositivos móviles */
+    .navbar-nav .nav-link {
+        transition: none !important; /* Eliminar todas las transiciones */
+    }
+    
+    /* Mantener el color de texto normal al pasar el cursor */
+    .navbar-nav .nav-link:hover {
+        color: #D6CFC8 !important; /* Color de texto normal al pasar el cursor */
+        background-color: transparent !important; /* Fondo transparente al pasar el cursor */
+        transform: none !important; /* Eliminar cualquier transformación al pasar el cursor */
+    }
+    
+    /* Ajustar color de fondo del botón del navbar-toggler */
+    .navbar-toggler {
+        background-color: #D6CFC8 !important; /* Color de fondo del botón */
+        border-color: #D6CFC8 !important; /* Color del borde del botón */
+    }
+    
+    /* Mantener el color de texto normal al pasar el cursor sobre el botón */
+    .navbar-toggler:hover {
+        background-color: #BEB6AD !important; /* Color de fondo al pasar el cursor sobre el botón */
+        border-color: #BEB6AD !important; /* Color del borde al pasar el cursor sobre el botón */
+    }
+}
+
+/* CSS para el boton del barra de navegación */
+.navbar-toggler {
+    background-color: #D6CFC8; /* Color de fondo del botón */
+    border-color: #D6CFC8; /* Color del borde del botón */
+}
+
+.navbar-toggler:focus {
+    background-color: #D6CFC8; /* Color de fondo al enfocar el botón */
+    border-color: #D6CFC8; /* Color del borde al enfocar el botón */
+    box-shadow: none; /* Eliminar la sombra al enfocar el botón */
+}
+
+.navbar-toggler:hover {
+    background-color: #BEB6AD; /* Color de fondo al pasar el cursor sobre el botón */
+    border-color: #BEB6AD; /* Color del borde al pasar el cursor sobre el botón */
+}
+
+.navbar-toggler:not(.collapsed) {
+    background-color: #BEB6AD; /* Color de fondo cuando el menú está abierto */
+    border-color: #BEB6AD; /* Color del borde cuando el menú está abierto */
+}
+
+/* Sección hero */
+.heading {
+    font-family: 'Oswald', sans-serif; /* Ejemplo de fuente */
+    font-size: 2rem; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+}
+
+.heading,
+.heading span {
+    display: inline-block; /* Asegura que los colores se apliquen correctamente */
+}
+
+.heading {
+    font-size: 50px;
+    color: #FFFFFF; /* Color para 'Bikers' */
+}
+
+.heading span {
+    color: #FDAB02; /* Color para 'Fest' */
+}
+
+/* Estilo para el contenedor que envuelve el contenido principal */
+.container-custom-hero {
+    background: #BEC5D1; /* Color de fondo del contenedor */
+    padding: 20px;
+    border: 5px solid #232224; /* Ancho y color del borde */
+}
+
+/* Contenedor relativo para manejar la superposición de la imagen */
+.container-custom-hero .position-relative {
+    position: relative;
+}
+
+/* Estilos específicos para la imagen dentro del contenedor hero */
+.container-custom-hero .hero-img {
+    display: block;
+    width: 50%; /* Reducimos el ancho de la imagen al 80% del contenedor */
+    max-width: 100%; /* Garantiza que la imagen no se agrande más allá de su tamaño original */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 20px; /* Radio de borde para esquinas redondeadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border: 5px solid #232224; /* Ancho y color del borde */
+}
+
+/* Estilos para la superposición sobre la imagen */
+.container-custom-hero .overlay {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)); /* Gradiente oscuro */
+    position: absolute; /* Posiciona la superposición absolutamente dentro del contenedor relativo */
+    top: 50%; /* Alinea la superposición verticalmente al centro del contenedor */
+    left: 50%; /* Alinea la superposición horizontalmente al centro del contenedor */
+    transform: translate(-50%, -50%); /* Centra la superposición exactamente sobre la imagen */
+    width: 49%; /* Reducimos el ancho de la superposición al 49% del contenedor */
+    max-width: 100%; /* Garantiza que la superposición no se agrande más allá de su tamaño original */
+    height: 100%; /* Ajustamos la altura de la superposición al 80% del contenedor */
+    max-height: 100%; /* Definimos una altura máxima del 100% para la superposición */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para la superposición */
+    color: white; /* Color del texto dentro de la superposición */
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    flex-direction: column; /* Alinea el contenido en una columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    opacity: 0; /* Hace la superposición invisible por defecto */
+    transition: opacity 0.5s ease; /* Añade una transición suave para la opacidad */
+    pointer-events: none; /* Permite hacer clic a través de la superposición */
+    border-radius: 20px; /* Radio de borde para esquinas redondeadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border: 5px solid #232224; /* Ancho y color del borde */
+
+}
+
+.container-custom-hero:hover .overlay {
+    opacity: 1;
+    pointer-events: auto; /* Habilita los eventos de clic dentro de la superposición al pasar el cursor sobre ella */
+}
+
+/* Estilos para el título dentro de la superposición */
+.container-custom-hero .overlay .heading {
+    color: #FDAB02; /* Color para 'Bikers' */
+    font-family: 'Oswald', sans-serif; /* Fuente para el título */
+    font-size: 2.5rem; /* Tamaño de fuente para el título */
+}
+
+/* Estilos para la palabra 'Fest' dentro del título */
+.container-custom-hero .overlay .heading span {
+    color: #DF452A; /* Color para 'Fest' */
+}
+
+/* Contenedor para el contenido adicional dentro de la superposición */
+.container-custom-hero .overlay .overlay-content {
+    opacity: 0; /* Hace el contenido adicional invisible por defecto */
+    transition: opacity 0.5s ease; /* Añade una transición suave para la opacidad */
+}
+
+/* Muestra la superposición y su contenido al pasar el cursor sobre la imagen */
+.container-custom-hero .position-relative:hover .overlay {
+    opacity: 1; /* Hace la superposición visible */
+}
+
+.container-custom-hero .position-relative:hover .overlay .overlay-content {
+    opacity: 1; /* Hace el contenido adicional visible */
+}
+
+.btn-hero{
+    position: relative;
+    width: 30%;
+    height: 40px;
+    background: #01C8DA;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 12px;
+    font-weight: bold; /* Negrita */
+    color: #232224;
+    border: 1px solid rgb(0, 0, 0); /* Ancho y color del borde */
+    font-weight: 50px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px; /* Radio de borde para esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-size: 1.2rem; /* Tamaño de fuente aumentado */
+  }
+
+
+/* Ajustes de estilo para pantallas pequeñas (dispositivos móviles) */
+@media (min-width: 0px) and (max-width: 767.98px) {
+    .container-custom-hero .hero-img {
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen para dispositivos móviles */
+        height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    }
+
+    .heading {
+        font-family: 'Oswald', sans-serif; /* Ejemplo de fuente */
+        font-size: 2rem; /* Tamaño de fuente */
+        font-weight: bold; /* Negrita */
+    }
+
+    .container-custom-hero .overlay {
+        opacity: 1; /* Hace la superposición visible por defecto en dispositivos móviles */
+        width: 95%; /* Reducimos el ancho de la superposición al 49% del contenedor */
+    }
+
+    .container-custom-hero .overlay .heading {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente para el título en dispositivos móviles */
+    }
+
+    .container-custom-hero .overlay .overlay-content {
+        opacity: 1; /* Hace el contenido adicional visible por defecto */
+        transition: none; /* Elimina cualquier transición para el contenido adicional */
+    }
+    
+    .container-custom-hero .hero-img {
+        width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor en dispositivos móviles */
+    }
+    .container-custom-hero .overlay .heading {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente para el título en pantallas pequeñas */
+    }
+    .container-custom-hero .overlay .overlay-content h4,
+    .container-custom-hero .overlay .overlay-content p {
+        font-size: 1rem; /* Reduce el tamaño de la fuente para el subtítulo y el párrafo en pantallas pequeñas */
+    }
+}
+
+/* About sección */
+
+.container-custom-about {
+    margin-top: 20px;
+    background-color: #BEC5D1; /* Color gris suave de fondo */  
+    font-family: 'Calibri', sans-serif; /* Fuente Calibri */
+    border: 5px solid #232224; /* Ancho y color del borde */
+  }
+  
+  .aboutseccion {
+    max-width: 100%; /* Ancho máximo del contenido para mantenerlo legible */
+    margin: 0 auto; /* Centrar el contenido */
+  }
+  
+  .heading-about{
+    font-size: 2.5rem; /* Tamaño grande para los títulos */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    font-size: 50px;
+  }
+  
+  .about-img {
+    border: 5px solid #fff; /* Borde blanco para las imágenes */
+    max-width: 100%; /* Imágenes fluidas que se ajustan al ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    transform: rotate(-5deg); /* Inclinación inicial */
+    margin-top: 20px; /* Ajusta este valor para mover las imágenes más abajo */
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
+}
+
+.about-img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño en un 5% al pasar el cursor */
+}
+
+.aboutseccion p {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify
+}
+
+
+.container-custom-about .about-img {
+    display: block;
+    width: 50%; /* Reducimos el ancho de la imagen al 80% del contenedor */
+    max-width: 100%; /* Garantiza que la imagen no se agrande más allá de su tamaño original */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 20px; /* Radio de borde para esquinas redondeadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border: 5px solid #232224; /* Ancho y color del borde */
+}
+
+@media (max-width: 991.98px) {
+    .aboutseccion p {
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .heading-about {
+        font-size: 2rem;
+    }
+
+
+    .about-img {
+        width: 100%;
+        max-width: none; /* Sin ancho máximo */
+        transform: rotate(0deg); /* Sin inclinación en dispositivos móviles */
+    }
+}
+
+/* Seccion sponsor */
+/* Estilos para la sección de patrocinadores */
+.container-custom-sponsors {
+    margin-top: 20px;
+    background-color: #BEC5D1; /* Color de fondo */
+    padding: 50px 20px; /* Espaciado interno */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar el contenido */
+    border: 5px solid #232224;
+}
+
+.aboutseccion {
+    max-width: 100%; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.heading-about {
+    font-size: 2.5rem; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.row.text-center {
+    justify-content: center; /* Centrar los elementos dentro de la fila */
+    margin-top: 30px; /* Espacio superior */
+}
+
+.col-sm-2 {
+    padding: 10px; /* Espaciado interno */
+    border-radius: 50%; /* Borde redondeado */
+}
+
+.col-sm-2 img {
+    width: 150px; /* Tamaño de las imágenes */
+    height: 150px; /* Tamaño de las imágenes */
+    border: 5px solid #fff; /* Borde blanco */
+    border-radius: 50%; /* Borde redondeado */
+    transition: transform 0.3s ease-in-out; /* Transición suave al pasar el mouse */
+}
+
+.col-sm-2 img:hover {
+    transform: scale(1.1); /* Escalar la imagen al pasar el mouse */
+}
+
+.col-sm-2 h2 {
+    font-size: 1.5rem; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.col-sm-2 a {
+    color: #333; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.col-sm-2 a:hover {
+    color: #FDAB02; /* Color del enlace al pasar el mouse */
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 767.98px) {
+    .col-sm-2 img {
+        width: 120px; /* Tamaño reducido para dispositivos móviles */
+        height: 120px; /* Tamaño reducido para dispositivos móviles */
+    }
+
+    .col-sm-2 h2 {
+        font-size: 1.2rem; /* Tamaño del texto reducido */
+    }
+}
+
+/* Sección footer */
+/* Estilos para el footer */
+.footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 50px 0; /* Espaciado interno */
+    text-align: center; /* Centrado del texto */
+}
+
+.footer a {
+    color: #D6CFC8; /* Color de los enlaces */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.footer a:hover {
+    color: #FFFFFF; /* Cambio a blanco al pasar el cursor */
+}
+
+.footer p {
+    font-size: 1rem; /* Tamaño de fuente para párrafos */
+    line-height: 1.8; /* Espaciado entre líneas */
+}
+
+.footer h4 {
+    color: #FDAB02; /* Color amarillo para los títulos */
+    font-size: 1.5rem; /* Tamaño de fuente para títulos */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.footer ul {
+    list-style: none; /* Eliminar viñetas de la lista */
+    padding: 0; /* Eliminar padding */
+}
+
+.footer ul li {
+    display: inline-block; /* Mostrar en línea los elementos de la lista */
+    margin-right: 10px; /* Espacio entre elementos */
+}
+
+.footer ul li a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1rem; /* Tamaño de fuente para enlaces */
+}
+
+.footer ul li a:hover {
+    color: #FDAB02; /* Cambio de color al pasar el mouse */
+}
