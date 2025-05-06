@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(to left, rgb(35, 2, 48), rgb(127, 4, 184));
+    height: 50%;
+}
+
+h1{
+    background: white;
+    border: 3px solid black;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.lista{
+    background: white;
+    border: 3px solid black;
+    margin: 20px;
+    padding: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

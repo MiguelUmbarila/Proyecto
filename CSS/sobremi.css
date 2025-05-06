@@ -1,0 +1,8 @@
+body{
+    background: linear-gradient(to left, rgb(35, 2, 48), rgb(127, 4, 184));
+    height: 50%;
+}
+
+.card{
+ margin: 3%;
+}
